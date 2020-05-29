@@ -1,0 +1,164 @@
+.navbar-height
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+body, html
+{
+	overflow-x: hidden!important;
+}
+.no-project
+{
+	border:1px dashed #757272;
+	border-radius: 3px;
+}
+.my-shadow
+{
+	border-radius: 11px;
+	background: #333333;
+	box-shadow:  0px 0px 1px 1px #2c2c2c, -8px -8px 18px #3a3a3a;
+}
+.right-sidebar-color
+{
+	background: #333333;
+}
+.right-sidebar-color-2
+{
+	background: #1b1b1b;
+}
+/*---------- CSS for home page starts --------------------------*/
+.theme-bg
+{
+	background-color: #253A69;
+}
+.text-theme
+{
+	color:#253A69;
+}
+.dashboard-section
+{
+	background: #a5cecd;
+	color:#3a3838;
+}
+@keyframes example {
+  from {margin-left:0px;}
+  to {margin-left:12px;}
+}
+
+/* The element to apply the animation to */
+.move{
+  animation-name: example;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.electron-bg
+{
+	background-size: 440px!important;
+    background-position: 50px 50px;
+    animation-name: movebg;
+  	animation-duration: 1.4s;
+  	animation-timing-function: linear;
+  	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+@keyframes movebg {
+  0%{background-position: 45px 5px;}
+  40%{background-position: 10px 20px;}
+  100%{background-position: 30px 100px;}
+}
+/*---------- CSS for home page ends --------------------------*/
+/*---------- CSS for the project page (board.php) starts -------*/
+.extra-light-bg
+{
+	background: #efefef!important;
+}
+.deadline
+{
+	position: absolute;
+	right: 4%;
+	top:1%;
+	padding:1%;
+	background: #F4423D;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color:#fff;
+	font-weight: bold;
+	box-shadow: 0 0 7px 1px #ec4227;
+}
+.completed
+{
+	position: absolute;
+	right: 4%;
+	top:1%;
+	padding:1%;
+	background: #3df443;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color:#fff;
+	font-weight: bold;
+	box-shadow: 0 0 7px 1px #6aec27;
+}
+.task-container
+{
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-wrap: wrap;
+}
+.task-container a
+{
+	margin:10px 8px;
+}
+.new-task-btn
+{
+	border:1px dashed grey;
+	border-radius: 5px;
+	padding:8px 10px;
+	transition: 0.05s ease-in;	
+}
+.new-task-btn:hover
+{
+	box-shadow: 0 0 10px 0 lightgrey;
+}
+.member-section ul li
+{
+	list-style-type: none;
+	width: 85%;
+	margin-bottom: 6%;
+}
+.member-section ul li:first-child
+{
+	margin-top: 7%;
+}
+.member-section .badge
+{
+	cursor: pointer;
+}
+/*---------- CSS for the project page (board.php) ends -------*/
+
+/*---------- CSS for the task page (view-task.php) starts -----*/
+#directory
+{
+	border: 1px solid lightgrey!important;
+	height: 80vh;
+	overflow-y: scroll;
+}
+
+/*css for drag and drop*/
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+  display: none;
+}
+.box.has-advanced-upload {
+  background-color: white;
+  outline: 2px dashed black;
+  outline-offset: -10px;
+}
+.box.has-advanced-upload .box__dragndrop {
+  display: inline;
+}
+/*---------- CSS for the task page (view-task.php) ends -----*/
